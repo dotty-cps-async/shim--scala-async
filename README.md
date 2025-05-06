@@ -1,11 +1,11 @@
-# shim--scala-async--dotty-cps-async
+# shim--scala-async
 
 shim which allows to compile scala program which use [scala-async](https://github.com/scala/scala-async) on dotty with [dotty-cps-async](https://github.com/rssh/dotty-cps-async)
 
 i.e. if you want port you program to dotty without changing source code, then you can replace scala-async dependecy to this shim for building with dotty.
 
 ```Scala
-   libraryDependencies += "com.github.rssh" %% "shim-scala-async-dotty-cps-async" % "0.9.23",
+   libraryDependencies += "io.github.dotty-cps-async" %% "shim-scala-async" % "1.0.2",
 ```
 
 ['--' in github project name changed to '-' ]
