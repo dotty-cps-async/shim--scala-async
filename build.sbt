@@ -6,13 +6,13 @@ lazy val root = project
   .settings(
     name := "shim--scala-async",
     organization := "io.github.dotty-cps-async",
-    version := "1.0.2",
+    version := "1.1.0",
     scalaVersion := dottyVersion,
 
     libraryDependencies += "com.github.sbt" % "junit-interface" % "0.13.3" % "test",
 
 
-    libraryDependencies += "io.github.dotty-cps-async" %% "dotty-cps-async" % "1.0.2" 
+    libraryDependencies += "io.github.dotty-cps-async" %% "dotty-cps-async" % "1.1.0" 
 
   )
 
