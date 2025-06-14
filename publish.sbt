@@ -1,13 +1,10 @@
-import xerial.sbt.Sonatype.sonatypeCentralHost
 
 credentials += Credentials(Path.userHome / ".sbt" / "central_sonatype_credentials")
 
 ThisBuild / organization := "io.github.dotty-cps-async"
 ThisBuild / organizationName := "dotty-cps-async"
 ThisBuild / organizationHomepage := Some(url("https://github.com/rssh"))
-ThisBuild / sonatypeCredentialHost := sonatypeCentralHost
-ThisBuild / sonatypeCredentialHost := sonatypeCentralHost
-ThisBuild / publishTo := sonatypePublishToBundle.value
+ThisBuild / publishTo := localStaging.value
 
 
 ThisBuild / scmInfo := Some(
